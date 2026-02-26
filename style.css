@@ -2223,3 +2223,52 @@ i, .fas, .far, .fab, .fa-solid, .fa-regular, .fa-light, .fa-thin, .fa-duotone {
 .diet-hint i {
     color: #b89474;
 }
+
+
+/* Цветные кружочки для дресс-кода */
+.color-circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    margin: 40px 0; /* Увеличиваем верхний и нижний отступ */
+    padding: 10px 0; /* Добавляем внутренние отступы */
+}   
+
+.color-circles::-webkit-scrollbar {
+    display: none; /* Скрываем скроллбар для Chrome/Safari */
+}
+
+.color-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* Запрещаем сжиматься */
+}
+
+.color-circle:hover {
+    transform: scale(1.1);
+}
+
+/* Адаптив для совсем маленьких экранов */
+@media screen and (max-width: 400px) {
+    .color-circle {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .color-circles {
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .color-circle {
+        width: 40px;
+        height: 40px;
+    }
+}
