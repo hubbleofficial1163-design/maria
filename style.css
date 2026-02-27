@@ -2272,3 +2272,19 @@ i, .fas, .far, .fab, .fa-solid, .fa-regular, .fa-light, .fa-thin, .fa-duotone {
         height: 40px;
     }
 }
+
+
+/* Локация */
+.location {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.location-address {
+    font-size: 1.3rem;
+    color: #5a4c3e;
+    margin: 20px 0 30px;
+    line-height: 1.4;
+    padding: 0 15px;
+}
